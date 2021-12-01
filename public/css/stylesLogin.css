@@ -1,0 +1,433 @@
+*{
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #CEE5D0;
+    color: #536FFF;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap; /* CAMBIAR EN LA VERSION PC*/
+    background-color: #CEE5D0;
+}
+
+/*----------------------HEADER----------------------*/
+
+/*logo - busqueda - iconos*/
+div.top-header
+{
+    background-color: #FF7070;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    width: 15%;
+}
+
+.imagen-logo{
+    width: 45px;
+}
+
+.imagen-logo, .form-busqueda, .cart, .login, .darkmode
+{
+    align-self: center;
+    
+}
+
+.cart, .login, .darkmode{
+    width: 15%;
+}
+
+.top-header div.form-busqueda {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.form-busqueda form{
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.form-busqueda input{
+    width: 80%;
+    border:0;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.form-busqueda button{
+    width: 10%;
+    border:0;
+    background-color: #F3F0D7;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+/*---------barra de navegacion--------*/
+
+div.button-header
+{
+    display: none;
+    background-color: #FED2AA;
+}
+
+div.button-header nav ul
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
+}
+.button-header ul li{
+    list-style-type: none;
+}
+
+.button-header ul li a{
+    text-decoration: none;
+    color: #FF7070;
+}
+
+.iconosHeader {
+    display: none;
+    align-items: center;
+    width: 22%;
+    justify-content: space-around;
+    
+}
+
+.iconH i {
+    color: #000;
+    font-size: 20px;
+}
+
+div.burger-menu{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    padding: 6px;
+    margin: 5px 2px;
+    color: #FF7070;
+    background-color: #FED2AA;
+    border-radius: 5px;
+}
+
+/*------login------*/
+
+main .formLogin {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F3F0D7;
+    color: #000000;
+    margin: 3% auto;
+    padding: 3%;
+    border-radius: 20px;
+    width:70% ;
+}
+
+main .formLogin div {
+    display: block;
+    padding: 2% 3%;
+    width: 100%;
+    margin: auto;
+
+}
+
+.saludo{
+    display: flex;
+    text-align: center;
+}
+.saludo i {
+    color: #FF7070;
+    font-size: 60px;;
+}
+
+#usuario, #contraseña {
+    margin: 3% 0px;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    padding: 5%;
+    /*padding: 10px;*/
+    box-shadow: -4px 4px 2px #B0B8FF;
+    display: block;
+    text-align: left;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+.ingresoA a, .ingresoB a{
+
+    margin: 3% 0px;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    padding: 5%;
+    /*padding: 10px;*/
+    box-shadow: -4px 4px 2px #B0B8FF;
+    display: block;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+.ingresoB a{
+    background-color:#0044AA;
+    border-radius: 20px;
+    color: #F3F0D7;
+}
+
+p h2{
+    display: block;
+
+}
+
+.saludo h2, div h3{
+    color: #536FFF;
+}
+
+.button{
+    width: 40% ;
+    text-align: center;
+    font-size: 15px;
+    color: #F3F0D7;
+    padding: 5px;
+    background-color:#FF7070;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+.send{
+    display: block;
+    text-align: center;
+}
+
+.ingresoA a, .ingresoB a{
+    text-decoration: none;
+}
+.ingresoA a i {
+    color: red;
+    
+}
+
+.ingresB {
+    color:white;
+    border: 0;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #0044AA;
+    text-decoration: none;
+}
+
+
+/* -----------FOOTER ----------*/
+
+
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ; /* space-around dn tablet*/
+    width: 100%; /*sacar en tablet*/
+    padding: 0px; /* en tablet 20px 0px;*/
+    margin-top: 0px;
+    background-color: #FF7070;
+    flex-direction: column;/*row en tablet*/
+    align-items: center;
+}
+
+.imglogos {
+    width: 50%;
+    margin: auto;
+    
+}
+
+/*-----------redes ----------*/
+
+.seguinos {
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+}
+
+.seguinos h4{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.seguinos i{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    width: 20%;
+}
+
+#face
+{
+color: #F3F0D7;
+}
+
+#twitter
+{
+color:#F3F0D7;
+}
+
+#insta
+{
+color: #F3F0D7;
+} 
+
+/*-----------medios de pago ----------*/
+.mediospago {
+    /* display: flex;*/
+    width: 100%; /*cambiar a 33% en tablet*/
+    font-size: 20px;
+    text-align: center;
+}
+
+.imagen-foot {
+    width: 22%;
+}
+
+.imglogos {
+    width: 50%;
+}
+
+.mediospago h4{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.mediospago i{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+} 
+
+/*-----------suscribite ----------*/
+
+.suscribe{
+    width: 70%; /* cambiar a 33%*/
+    font-size: 22px;
+    padding: 10px;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+    text-align: center;
+}
+
+.enemy{
+    padding: 6px;
+}
+input.enemy{
+    width: 90%;
+    padding: 6px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+    font-size: 90%; /*cambiar a 16px en tablet*/
+    margin-bottom: 10px;
+}
+
+button.enemy{
+    font-size: 16px;
+    padding: 6px;
+    color: #F3F0D7;
+    background-color:#FF7070;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+.suscribe h4{
+    padding: 10px;
+    font-size: 20px;
+    width: 33%;
+} 
+
+
+
+
+/*-------tablet-----*/
+
+@media (min-width: 361px){
+
+    div.burger-menu{
+        display: none;
+    }
+
+    .iconosHeader {
+        display: flex;
+    }
+
+    div.button-header{
+        display: block;
+    }
+
+    .form-busqueda button{
+        width: 8%;
+    }
+
+    main .formLogin{
+        width: 50%;
+    }
+
+    .button{
+        font-size: 20px;
+    }
+
+    /* footer */
+
+    .footer-contenedor {
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px 0px; 
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .seguinos , .mediospago , .suscribe{
+        
+        width: 33%;
+    }
+
+    input.enemy{
+        font-size: 16px;
+    }
+}
+
+
+/*----desktop----*/
+@media (min-width: 679px){
+
+    .form-busqueda button{
+        width: 5%;
+    }
+
+    .iconH i {
+        font-size: 24px;
+    }
+
+    main .formLogin{
+        width: 40%;
+    }
+    
+}

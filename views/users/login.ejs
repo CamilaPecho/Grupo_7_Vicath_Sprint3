@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iniciar Sesion</title>
+    
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/30dc2d0760.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="/css/stylesLogin.css">
+    </head>
+<body>
+    <%- include("./partials/header") %> 
+    <main>
+        <section class="formLogin">
+            <div class="saludo">
+                    <a href="#">
+                        <i class="fas fa-user-circle"></i> 
+                    </a>
+                    <h2>¡Bienvenido/a!</h2>
+            </div>
+            <div>
+            <form action="/" method="get">
+                
+                <div>
+                    <h3> <label for="usuario">Usuario</label> </h3>
+                    <input type="email" name="usuario" id="usuario" placeholder="Ingrese su email" required>
+                </div>
+
+                <div>
+                    <h3> <label for="contraseña">Contraseña</label> </h3>
+                    <input type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña" required>
+                </div>
+
+                <div class="texto">
+                    <label for="recordarme">
+                        <input type="checkbox" name="recordarme" id="recordarme" selected>
+                            Recordarme</label>
+                </div>
+                
+                <div class="send"> <button type="submit" class="button">Ingresar</button>  
+                </div>
+
+                <div class="contraseña">
+                <a href="#">¿Olvidaste tu contraseña? </a>
+                </div>
+                <div class="registrate">
+                    <a href="/register">¿Sos nuevo usuario? Registrate</a>
+                </div>
+                <div class="ingresoA">
+                <a  href="/">Ingresá con google <i class="fab fa-google"></i></a>
+                </div>
+                <div class="ingresoB">
+                <a  href="/">Ingresá con Facebook <i class="fab fa-facebook"></i></a>
+                </div>
+
+            </form>
+        </div>
+        </section>
+    </main>
+    <%- include("./partials/footer") %> 
+</body>
+</html>
