@@ -1,0 +1,1 @@
+- Tablero del trello : https://trello.com/b/aqYJFI8f/sprint-3
