@@ -1,0 +1,480 @@
+* {
+    margin: 0px; /*centra todo*/
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #CEE5D0;
+}
+
+/*----------------------HEADER----------------------*/
+/*logo - busqueda - iconos*/
+div.top-header
+{
+    background-color: #FF7070;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.logo
+{
+    display: flex;
+    width: 15%;
+}
+
+.imagen-logo
+{
+    width: 45px;
+}
+
+.imagen-logo, .form-busqueda, .cart, .login, .darkmode
+{
+    align-self: center;
+    
+}
+
+.cart, .login, .darkmode{
+    width: 15%;
+}
+
+.top-header div.form-busqueda {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.form-busqueda form{
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.form-busqueda input{
+    width: 80%;
+    border:0;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.form-busqueda button{
+    width: 10%;
+    border:0;
+    background-color: #F3F0D7;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+/*---------barra de navegacion--------*/
+
+div.button-header
+{
+    display: none;
+    background-color: #FED2AA;
+}
+
+div.button-header nav ul
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
+}
+.button-header ul li{
+    list-style-type: none;
+}
+
+.button-header ul li a{
+    text-decoration: none;
+    color: #FF7070;
+}
+
+.iconosHeader {
+    display: none;
+    align-items: center;
+    width: 22%;
+    justify-content: space-around;
+    
+}
+
+.iconH i {
+    color: #000;
+    font-size: 20px;
+}
+
+div.burger-menu{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    padding: 6px;
+    margin: 5px 2px;
+    color: #FF7070;
+    background-color: #FED2AA;
+    border-radius: 5px;
+}
+
+
+/*------REGISTRO------*/
+
+.register {
+    width: 100%;
+    display: block; /*flex en desk*/
+    padding: 20px;
+    justify-content: space-around;
+    margin:auto
+}
+
+.continuar div input.dato{
+    border:0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+.continuar div{
+    padding: 10px;
+    text-align: left;
+}
+
+.register div form h3{
+    padding: 10px;
+    color: #536FFF;
+}
+
+.continuar h4{
+    padding: 10px;
+    color: #536FFF;
+}
+
+.register div{
+    width: 100%;
+    padding: 10px;
+}
+
+.register div form.continuar{
+    background-color: #F3F0D7;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.continuar div.otrasOpciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.continuar div.botones{
+    display: flex;
+    justify-content: space-around;
+}
+
+button.boton{
+    justify-content: space-around;
+    width:45%;
+    font-size: 20px;
+    color: #F3F0D7;
+    padding: 10px;
+    background-color:#FF7070;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+button.google{
+    width: 90%;
+    font-size: 15px;
+    padding: 10px;
+    background-color:white;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+button.google i{
+    padding-left: 10px;
+    color: red;
+}
+
+button.facebook{
+    width: 90%;
+    font-size: 15px;
+    padding: 10px;
+    background-color:#0044AA;
+    border: 0;
+    border-radius: 20px;
+    color: #F3F0D7;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+button.facebook i{
+    padding-left: 5px;
+    color: #F3F0D7;
+}
+
+/* -----------FOOTER ----------*/
+
+
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ; /* space-around dn tablet*/
+    width: 100%; /*sacar en tablet*/
+    padding: 0px; /* en tablet 20px 0px;*/
+    margin-top: 0px;
+    background-color: #FF7070;
+    flex-direction: column;/*row en tablet*/
+    align-items: center;
+}
+
+.imglogos {
+    width: 50%;
+    margin: auto;
+    
+}
+
+/*-----------redes ----------*/
+
+.seguinos {
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+}
+
+.seguinos h4{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.seguinos i{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    width: 20%;
+}
+
+#face
+{
+color: #F3F0D7;
+}
+
+#twitter
+{
+color:#F3F0D7;
+}
+
+#insta
+{
+color: #F3F0D7;
+} 
+
+/*-----------medios de pago ----------*/
+.mediospago {
+    /* display: flex;*/
+    width: 100%; /*cambiar a 33% en tablet*/
+    font-size: 20px;
+    text-align: center;
+}
+
+.imagen-foot {
+    width: 22%;
+}
+
+.imglogos {
+    width: 50%;
+}
+
+.mediospago h4{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.mediospago i{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+} 
+
+/*-----------suscribite ----------*/
+
+.suscribe{
+    width: 70%; /* cambiar a 33%*/
+    font-size: 22px;
+    padding: 10px;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+    text-align: center;
+}
+
+.enemy{
+    padding: 6px;
+}
+input.enemy{
+    width: 90%;
+    padding: 6px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+    font-size: 90%; /*cambiar a 16px en tablet*/
+    margin-bottom: 10px;
+}
+
+button.enemy{
+    font-size: 16px;
+    padding: 6px;
+    color: #F3F0D7;
+    background-color:#FF7070;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: -4px 4px 2px #B0B8FF;
+}
+
+.suscribe h4{
+    padding: 10px;
+    font-size: 20px;
+    width: 33%;
+} 
+
+
+/*-----------adaptaciones ----------*/
+
+@media (min-width:361px){
+
+    .form-busqueda button{
+        width: 8%;
+    }
+    .iconosHeader {
+        display: flex;
+    }
+
+    div.button-header{
+        display: block;
+    } 
+
+    div.burger-menu{
+        display: none;
+    }
+
+    .register{
+        width: 80%;
+        
+    }
+
+    .footer-contenedor {
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px 0px; 
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .seguinos , .mediospago , .suscribe{
+        
+        width: 33%;
+    }
+
+    input.enemy{
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width:769px){
+
+    .form-busqueda button{
+        width: 5%;
+    }
+
+    .iconH i{
+        font-size: 24px;
+    }
+
+    .register {
+        display: flex; 
+        width: 100%;
+    }
+}
+
+
+
+
+/*-----------adaptaciones ----------*/
+
+/* @media (min-width:360px){
+
+    div.button-header nav ul{
+    display: none;
+    }
+
+    .iconosHeader{
+        display: none;
+    }
+
+    .footer-contenedor {  
+        width: 100%;
+        padding: 0px;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .mediospago ,.suscribe , .seguinos{
+        width: 100%;
+        border: solid 2px red;
+    }
+
+    
+}
+@media (max-width:770px){
+
+    .register {
+        display: block;
+    }
+
+    .form-busqueda button{
+        width: 10%;
+        border-radius: 30px;
+    }
+
+    .footer-contenedor {
+        flex-direction: row;
+    }
+    .iconH i {
+        font-size: 20px;
+    }
+    
+    .mediospago {
+        / * display: flex; * /
+        width: 33%;
+        font-size: 20px;
+    }
+    .imagen-foot {
+        width: 22%;
+    }
+    
+    .seguinos {
+        font-size: 30px;
+        
+        width: 33%;
+    }
+    
+    .suscribe {
+        font-size: 30px;
+        width: 33%;
+    }
+    
+    input .enemy{
+        width: 90%;
+    }
+    .enemy {
+        padding: 6px;
+    }
+
+} */
+
+
+

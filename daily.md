@@ -6,7 +6,17 @@ tareas basicas.
 Vistas: Todos : Home 
     Inu - Detalle
     Limberth - Registro y Login
-    Cande - Carrito 
+    Cande - Carrito
+dayly - 2/12 
+Acomodamos las vistas y agregamos controllers, tuvimos problemas con eso y los resolvimos :D 
+Empezamos con eso, 
+Repartimos tareas: Inu - Home, Login, Detalle
+                  Cande - Carrito, Styles del detalle
+                  Limberth - Registro, y corregir Styles del Carrito
+
+
+
+
 
 
 

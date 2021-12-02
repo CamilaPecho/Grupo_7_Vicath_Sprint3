@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-body{
+body
+{
     font-family: 'Roboto', sans-serif;
     background-color: #CEE5D0;
     color: #536FFF;
@@ -13,19 +14,22 @@ body{
 /*----------------------HEADER----------------------*/
 
 /*logo - busqueda - iconos*/
-div.top-header{
+div.top-header
+{
     background-color: #FF7070;
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
 
-.logo{
+.logo
+{
     display: flex;
     width: 15%;
 }
 
-.imagen-logo{
+.imagen-logo
+{
     width: 45px;
 }
 
@@ -90,11 +94,6 @@ div.button-header nav ul
 .button-header ul li a{
     text-decoration: none;
     color: #FF7070;
-    transition: all 0.3s;
-}
-
-.button-header ul li a:hover{
-    color: #536FFF;
 }
 
 .iconosHeader {
@@ -102,10 +101,11 @@ div.button-header nav ul
     align-items: center;
     width: 22%;
     justify-content: space-around;
+    
 }
 
 .iconH i {
-    color: #FED2AA;
+    color: #000;
     font-size: 20px;
 }
 
@@ -120,125 +120,26 @@ div.burger-menu{
     border-radius: 5px;
 }
 
-/*-------------------carrusel-------------*/
-/*.carrusel-caja{
-    display: none;
-}*/
+/*--------------MAIN----------------*/
 
-.slider{
-    display: none;
-}
+/*------------producto----------*/
 
-/*----------------------MAIN----------------------*/
-main section article img{
-    width: 25%;
-}
-
-main{
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/*----------------------FILTRADO----------------------*/
-
-.filtrado-contenedor{
-    width: 25%;
-    padding: 10px;
-    display: none;
-}
-
-.filtrado{
-    padding: 20px;
-    background-color: #F3F0D7;
-    border-radius: 10px;
-}
-
-.filtrado div {
-    padding-top: 10px;
-}
-
-.filtrado div label{
-    padding-bottom: 10px;
-}
-
-.filtrado div select{
-    margin: 5px;
-    width: 100%;
-    border:0;
-    background-color: white;
-    padding: 6px;
-    border-radius: 10px;
-    color:#536FFF;
-}
-
-.filtrado div select option{
-    border:0;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-/*----------------productos------------*/
-
-.productos{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-left: 12px;
-}
-
-.productos h3{
-    padding: 10px;
-}
-
-/*----------------destacados------------*/
-
-.destacados{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.destacados article{
+.producto{
     width: 90%;
-    margin: 5px auto;
+    margin: 10px auto;
     padding: 10px;
     background-color: #F3F0D7;
     border-radius: 10px;
-    transition: all 0.3s;
 }
 
-.destacados article:hover{
-    box-shadow: -4px 4px 2px #B0B8FF;
-    width:100%;
-}
 
-.destacados img{
+.producto img{
     width: 100%;
-}
-
-.main-article h4{
-    
-    text-align: left;
-}
-
-.main-article p{
-    margin: 5px;
-    font-size: 15px;
-}
-
-.contenedor-precio p.precio{
-    margin: 5px;
-    font-size: 20px;
-    font-weight: bold;
     padding: 5px;
 }
 
-.contenedor-precio{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
+
+
 
 .contenedor-precio button{
     border: 0;
@@ -249,34 +150,142 @@ main{
     font-size: 20px;
     padding: 5px;
 }
-/*----------------ofertas------------*/
 
-.ofertas
+
+/*--------Nuevo Producto (padre e 3 hijos)----*/
+.imagenesProdContenedor
 {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.ofertas img{
+    flex-wrap: wrap;
     width: 100%;
 }
 
-.ofertas article{
+.imagen-producto {
+    width: 100%;
+}
+
+
+.imagen-producto-hijas {
+    width: 100%;
+    display: flex;
+}
+
+.imagenesProdContenedor::before /*es simplemente para agregar un texto, no lo saque de google, esta en la teoria :v*/
+{
+    content: "Cartuchera";
+    font-size: 24px;
+}
+
+.imagen-producto::before
+{
+    content: "$400";
+    color: rgb(3, 177, 70);
+    font-size: 20px;
+}
+
+.imagenesProdContenedor::after
+{
+    content: "Descripcion: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi earum doloribus sapiente, repellat architecto nesciunt iure nam odio eius, soluta quam temporibus! Aperiam maiores consequatur, doloremque cumque tempore voluptate?";
+    font-size: 16px;
+    color: #000;
+}
+
+.descripcionTotalProducto /*activar en version PC*/
+{
+    display: none;
+}
+
+.cantidadYCarrito {
+    display: flex;
+    margin-top: 12px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.cantidadInput {
+    width: 18%;
+}
+
+.compartir
+{
+margin-top: 12px;
+}
+.descuentoYPedido {
+    display: flex;
+    margin-top: 12px;
+    justify-content: space-around;
+}
+.descuento
+{
+
+}
+.descuentoInput
+{
+
+}
+
+
+
+
+
+/*-----productos relacionados-----*/
+
+.productos-relacionados{
     width: 90%;
-    margin: 5px auto;
+    margin: 10px auto;
     padding: 10px;
     background-color: #F3F0D7;
     border-radius: 10px;
-    transition: all 0.3s;
 }
 
-.ofertas article:hover{
-    box-shadow: -4px 4px 2px #B0B8FF;
-    width:100%;
+.productos-relacionados article{
+    padding: 10px;
+    text-align: center;
+}
+
+.productos-relacionados article h3{
+    padding: 5px;
+    text-align: left;
+}
+
+.productos-relacionados img{
+    width: 70%;
+}
+
+.articulos
+{
+    display: flex;
+}
+
+.tituloProd
+{
+    font-size: 8px;
+}
+
+/* --------Productos similares----------*/
+.productos-similares{
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+}
+
+.productos-similares article{
+    padding: 10px;
+    text-align: center;
+}
+
+.productos-similares article h3{
+    padding: 5px;
+    text-align: left;
+}
+
+.productos-similares img{
+    width: 70%;
 }
 
 /* -----------FOOTER ----------*/
+
 
 .footer-contenedor {
     display: flex;
@@ -316,20 +325,22 @@ main{
     width: 20%;
 }
 
-#face{
+#face
+{
 color: #F3F0D7;
 }
 
-#twitter{
+#twitter
+{
 color:#F3F0D7;
 }
 
-#insta{
+#insta
+{
 color: #F3F0D7;
 } 
 
 /*-----------medios de pago ----------*/
-
 .mediospago {
     /* display: flex;*/
     width: 100%; /*cambiar a 33% en tablet*/
@@ -371,7 +382,6 @@ color: #F3F0D7;
 .enemy{
     padding: 6px;
 }
-
 input.enemy{
     width: 90%;
     padding: 6px;
@@ -398,14 +408,13 @@ button.enemy{
     width: 33%;
 } 
 
-/*--------adaptaciones------------*/
+/*-----------adaptaciones ----------*/
 
-@media(min-width: 361px) {
+@media (min-width:361px){
 
     .form-busqueda button{
         width: 8%;
     }
-
     .iconosHeader {
         display: flex;
     }
@@ -414,44 +423,63 @@ button.enemy{
         display: block;
     } 
 
-    .productos{
-        margin: 3px auto;
-    }
-
-    .productos{
-        flex-wrap: wrap;
-    }
-
-    .destacados{
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-    
-    .ofertas{
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    .destacados article{
-        width: 45%;
-    }
-
-    .ofertas article{
-        width: 45%;
-    }
-
-    .destacados article:hover{
-        box-shadow: -4px 4px 2px #B0B8FF;
-        width:47%;
-    }
-
-    .ofertas article:hover{
-        box-shadow: -4px 4px 2px #B0B8FF;
-        width:47%;
-    }
-
     div.burger-menu{
         display: none;
+    }
+
+    #iconCuenta
+    {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .login_desplegable_header
+    {
+        display: block;
+        text-align: center;
+        margin-bottom: 14px;
+    }
+    
+    
+    
+    .login_desplegable {
+        position: absolute;
+        left: -34px;
+        box-sizing: border-box;
+        transform: translateX(-10%);
+        opacity: 0;
+        width: 107px;
+        background-color: white;
+        padding: 5px;
+        z-index: -2;
+        border-top: 2px solid #2C6460;
+        box-shadow: 0 3px 6px #565656;
+        transition: all 1s;
+    }
+    
+    .login_desplegable_login
+    {
+        display:block;
+        text-align: center;
+    }
+    
+    .login_desplegable_signup
+    {
+        display:block;
+        text-align: center;  
+    }
+    
+    .inputCheck /*pa borrar ese feo checkbox*/
+    {
+        position: absolute;
+        display: none;
+    }
+    
+    .inputCheck:checked + .login_desplegable
+    {
+    
+        opacity: 1;
+        z-index: 10;
     }
 
     .footer-contenedor {
@@ -472,52 +500,15 @@ button.enemy{
         font-size: 16px;
     }
 
-    #iconCuenta{
-        position: relative;
-        cursor: pointer;
+
+    .producto{
+        width: 85%;
+        margin: 10px auto;
+        padding: 10px;
+        background-color: #F3F0D7;
+        border-radius: 10px;
     }
-    
-    .login_desplegable_header{
-        display: block;
-        text-align: center;
-        margin-bottom: 14px;
-    }
-    
-    .login_desplegable {
-        position: absolute;
-        left: -34px;
-        box-sizing: border-box;
-        transform: translateX(-10%);
-        opacity: 0;
-        width: 106px;
-        background-color: white;
-        padding: 5px;
-        z-index: -2;
-        box-shadow: 0 3px 6px #B0B8FF;
-        transition: all 1s;
-    }
-    
-    .login_desplegable_login{
-        display:block;
-        text-align: center;
-    }
-    
-    .login_desplegable_signup{
-        display:block;
-        text-align: center;  
-    }
-    
-    .inputCheck /*pa borrar ese feo checkbox*/{
-        position: absolute;
-        display: none;
-    }
-    
-    .inputCheck:checked + .login_desplegable{
-    
-        opacity: 1;
-        z-index: 10;
-    }
-    
+
 }
 
 @media (min-width:769px){
@@ -526,98 +517,107 @@ button.enemy{
         width: 5%;
     }
 
-    .filtrado-contenedor{
-        width: 25%;
-        padding: 10px;
-        display: block;
-        margin: 5px;
+    .iconH i{
+        font-size: 24px;
     }
 
-    .productos{
-        width: 70%;
-    }
-
-    .destacados article{
-        margin: 5px;
-        width: 22%;
-    }
-
-    .ofertas article{
-        margin: 5px;
-        width: 22%;
-    }
-
-    .destacados article:hover{
-        box-shadow: -4px 4px 2px #B0B8FF;
-        width:25%;
-    }
-
-    .ofertas article:hover{
-        box-shadow: -4px 4px 2px #B0B8FF;
-        width:25%;
-    }
-
-    /*
-    .carrusel-caja{
-        display: flex;
-        width: 100%;
-    }   
-
-    .carrusel-caja img{
-    width:100%;
-    }
-
-    */
-
-    .slider{
-        display: block;
-        width: 100%;
-        overflow: hidden;
-    
-    }
-    
-    .slider ul{
-        padding: 0;
-        display: flex;
-        width: 400%;
-        animation: cambiox 13s infinite alternate;
-    
-    }
-    
-    .slider li{
-        width: 100%;
-        list-style: none;
-    }
-    
-    .slider img{
-        width: 100%;
-    }
-    
-    @keyframes cambiox{
-        0% {margin-left:0;}
-        20% {margin-left:0;}
-        /*se tarda 1 seg en una imagen a otra 20x0.05*/
-        25% {margin-left:-100%;}
-        45% {margin-left:-100%;}
-    
-        50% {margin-left:-200%;}
-        70% {margin-left:-200%;}
-    
-        75% {margin-left:-300%;}
-        100% {margin-left:-300%;}
-    }
-
-    .login_desplegable{
+    .login_desplegable {
         position: absolute;
-        left: -110px;
+        left: -50px;
         box-sizing: border-box;
         transform: translateX(-10%);
         opacity: 0;
-        width: 166px;
+        width: 142px;
         background-color: white;
         padding: 5px;
         z-index: -2;
-        box-shadow: 0 3px 6px #B0B8FF;
+        border-top: 2px solid #2C6460;
+        box-shadow: 0 3px 6px #565656;
         transition: all 1s;
+    }
+
+    .producto{
+        display: flex;
+    }
+
+    .productos-relacionados div.articulos{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .productos-similares div.articulos{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .articulos article{
+        width: 25%;
+    }
+
+
+    /*-----Imagenes Padre y 3 hijos--------*/
+    .imagenesProdContenedor::before /*es simplemente para agregar un texto*/
+    {
+    content: "";
+    font-size: 24px;
+    }
+
+    .imagen-producto::before
+    {
+    content: "";
+    }
+
+    .imagenesProdContenedor::after
+    {
+    content: "";
+    }
+
+   
+
+    .producto
+    {
+        width: 100%;
+    }
+
+    .descuentoYPedido
+    {
+        display: none;
+    }
+
+/*---------------Segunda sección (aca va el titulo precio,etc)*/
+    .imagenesProdContenedor { /*para que sean mitades*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    }
+
+    .descripcionTotalProducto
+    {
+    display: block;
+    width: 50%;
+    padding: 25px;
+    flex-wrap: wrap;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .precio {
+        color: green;
+        margin-bottom: 25px;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .descripcion
+    {
+
+    }
+
+    .descuentoYPedido2 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 14px;
     }
 }
