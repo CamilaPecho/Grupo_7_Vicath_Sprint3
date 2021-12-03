@@ -101,7 +101,7 @@ div.button-header nav ul
     display: none;
     align-items: center;
     width: 22%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .iconH i {
@@ -607,17 +607,17 @@ button.enemy{
         100% {margin-left:-300%;}
     }
 
-    .login_desplegable{
+    .login_desplegable {
         position: absolute;
-        left: -110px;
+        left: -51px;
         box-sizing: border-box;
         transform: translateX(-10%);
         opacity: 0;
-        width: 166px;
+        width: 151px;
         background-color: white;
         padding: 5px;
         z-index: -2;
-        box-shadow: 0 3px 6px #B0B8FF;
+        box-shadow: 0 3px 6px #b0b8ff;
         transition: all 1s;
     }
 }
