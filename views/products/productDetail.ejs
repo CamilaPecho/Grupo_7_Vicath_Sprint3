@@ -8,30 +8,30 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="stylesheet" href="/css/productDetail.css">
-        <link rel="icon" href="/images/logoIcon.ico">
+        <link rel="icon" href="./images/logoIcon.ico">
     </head>
     <body>
         <%- include("../partials/header") %>
         <main>
             <section class="producto">
-                <div class="tituloYPrecio">
+                <!-- <div class="tituloYPrecio">
                     <p class="tituloP">Calculadora CASIO FX-666</p>
                     <p class="precioP">$20.000</p>
-                </div>
+                </div>  se repite a la izquierda del producto, el precio está más abajo porque va en el div que queda a la derecha --> 
                 <div class="imagenesProdContenedor">
                 
                 <div class="imagen-producto">
-                    <img src="./images/calculadora1.png" class="cartuchera">
+                    <img src="../images/calculadora1.png" class="cartuchera">
                 </div>
                 
                 <div class="imagen-producto-hijas">
-                    <div class="prodHija"><img src="./images/calculadora2.png" alt=""></div>
-                    <div class="prodHija"><img src="./images/calculadora3.png" alt=""></div>
-                    <div class="prodHija"><img src="./images/calculadora4.png" alt=""></div>
+                    <div class="prodHija"><img src="../images/calculadora2.png" alt=""></div>
+                    <div class="prodHija"><img src="../images/calculadora3.png" alt=""></div>
+                    <div class="prodHija"><img src="../images/calculadora4.png" alt=""></div>
                 </div>
                 
 
-                <div class="cantidadYCarrito">
+                <!-- <div class="cantidadYCarrito">
                     <div class="cantidad">
                     <label for="">Cantidad: 
                     <input type="number" class="cantidadInput" minlength="0" maxlength="15">
@@ -55,7 +55,9 @@
                     <div class="Pedido">
                         <button type="button" class="botonDetalle"><i class="fas fa-truck"></i> Calcular envio</button>
                     </div>
-                </div>
+                </div> 
+                
+                ---lo cambio al div derecho  -->
                 
             </div>
                 <div class="descripcionTotalProducto">
@@ -66,57 +68,97 @@
                     Ab velit excepturi pariatur quas sed totam earum facilis magnam 
                     id optio sint qui harum voluptatum neque provident ea reiciendis 
                     </p>
+                    <br>
+
+                    <div class="detallesDeCompra">
+                    <div class="cantidadYCarrito">
+                        <div class="cantidad">
+                        <label for="">Cantidad: 
+                        <input type="number" class="cantidadInput" minlength="0" maxlength="15">
+                        </label>
+                        </div>
+    
+                        <div class="carrito">
+                            <button type="button" class="botonDetalle"><i class="fas fa-cart-plus"></i> Agregar a carrito</button>
+                            
+                        </div>
+                    </div>
+
                     <div class="descuentoPC">
                         <div class="descuento2">
-                            <label for="" class="textoDescuento">¿Tenés algún código de descuento?
-                            <input type="text" class="descuentoInput" placeholder="Código de descuento"></label>
+                            <label for="" class="textoDescuento">¿Tenés algún código de descuento?</label>
+                            <input type="text" class="descuentoInput" placeholder="Ingresá tu código">
                         </div>
 
+                    </div>
+    
+                    <div class="descuentoYPedido">
+                        <!-- <div class="descuento">
+                            <input type="text" class="descuentoInput" placeholder="Código de descuento">
+                        </div> 
+                    esto para qué es??
+                    -->
+                        <div class="Pedido">
+                            <button type="button" class="botonDetalle"><i class="fas fa-truck"></i> Calcular envio</button>
+                        </div>
                     </div>
 
                     <div class="pedidoPC">
-                        <div class="Pedido2">
+                        <div class="pedido2">
+                            <label for="" class="calcularEnvio">
+                                <input type="text" class="calcularEnvio" placeholder="Ingresá tu código postal"></label>
                             <button type="button" class="bttonEnvio"><i class="fas fa-truck"></i> Calcular envio</button>
                         </div>
                     </div>
+
+                    <div class="compartir">
+                        <i class="fas fa-share-alt"></i> Compartir
+                    </div>
+
+                    <div class="buttonComprarClass">
+                        <a href="/products/cart">
+                            <button type="submit" class="buttonComprar"> Comprar </button>
+                        </a>
+                    </div>
                 
+                    </div>
             </div>
             </section>
             <section class="productos-relacionados">
                 <div>
-                   <h4>Productos Relacionados</h4> 
+                    <h4>Productos Relacionados</h4> 
                 </div>
                 <div class="articulos">
                 <article class="prod-relacionado">
                     <div >
-                        <img src="./images/cartuchera.jpg" class="cartuchera">
+                        <img src="../images/cartuchera.jpg" class="cartuchera">
                     </div>
                     <div class="tituloProd">
-                       <h3>Titulo producto</h3> 
+                        <h3>Titulo producto</h3> 
                     </div>
                 </article>
                 <article class="prod-relacionado">
                     <div >
-                        <img src="./images/marcadores.jpg" class="marcadores">
+                        <img src="../images/marcadores.jpg" class="marcadores">
                     </div>
                     <div class="tituloProd">
-                       <h3>Titulo producto</h3> 
+                        <h3>Titulo producto</h3> 
                     </div>
                 </article>
                 <article class="prod-relacionado">
                     <div >
-                        <img src="./images/marcadoresPastel.jpg" class="pasteles">
+                        <img src="../images/marcadoresPastel.jpg" class="pasteles">
                     </div>
                     <div class="tituloProd">
-                       <h3>Titulo producto</h3> 
+                        <h3>Titulo producto</h3> 
                     </div>
                 </article>
                 <article class="prod-relacionado">
                     <div >
-                        <img src="./images/tijeras.jpg" class="tijeras">
+                        <img src="../images/tijeras.jpg" class="tijeras">
                     </div>
                     <div class="tituloProd">
-                       <h3>Titulo producto</h3> 
+                        <h3>Titulo producto</h3> 
                     </div>
                 </article>
                 </div>
@@ -124,39 +166,39 @@
 
             <section class="productos-similares">
                 <div>
-                   <h4>Productos similares</h4> 
+                    <h4>Productos similares</h4> 
                 </div>
                 <div class="articulos">
                 <article class="prod-similar">
                     <div >
-                        <img src="./images/cartuchera.jpg" class="cartuchera">
+                        <img src="../images/cartuchera.jpg" class="cartuchera">
                     </div>
                     <div class="tituloProd">
-                       <h3>Titulo producto</h3> 
+                        <h3>Titulo producto</h3> 
                     </div>
                 </article>
                 <article class="prod-similar">
                     <div >
-                        <img src="./images/marcadores.jpg" class="marcadores">
+                        <img src="../images/marcadores.jpg" class="marcadores">
                     </div>
                     <div class="tituloProd">
-                       <h3>Titulo producto</h3> 
+                        <h3>Titulo producto</h3> 
                     </div>
                 </article>
                 <article class="prod-similar">
                     <div >
-                        <img src="./images/marcadoresPastel.jpg" class="pasteles">
+                        <img src="../images/marcadoresPastel.jpg" class="pasteles">
                     </div>
                     <div class="tituloProd">
-                       <h3>Titulo producto</h3> 
+                        <h3>Titulo producto</h3> 
                     </div>
                 </article>
                 <article class="prod-similar">
                     <div >
-                        <img src="./images/tijeras.jpg" class="tijeras">
+                        <img src="../images/tijeras.jpg" class="tijeras">
                     </div>
                     <div class="tituloProd">
-                       <h3>Titulo producto</h3> 
+                        <h3>Titulo producto</h3> 
                     </div>
                 </article>
                 </div>

@@ -170,18 +170,20 @@ div.burger-menu{
     display: flex;
 }
 
-.imagenesProdContenedor::before /*es simplemente para agregar un texto, no lo saque de google, esta en la teoria :v*/
+.imagenesProdContenedor::before /*es simplemente para agregar un texto, no lo saque de google, esta en la teoria :v */
 {
-    content: "Cartuchera";
+    content: "Calculadora CASIO FX-666";
     font-size: 24px;
 }
 
 .imagen-producto::before
 {
-    content: "$400";
+    content: "$120000";
     color: rgb(3, 177, 70);
     font-size: 20px;
-}
+} 
+
+
 
 .imagenesProdContenedor::after
 {
@@ -199,7 +201,6 @@ div.burger-menu{
     display: flex;
     margin-top: 12px;
     justify-content: space-evenly;
-    width: 100%;
 }
 .cantidadInput {
     width: 18%;
@@ -214,14 +215,15 @@ margin-top: 12px;
     margin-top: 12px;
     justify-content: space-around;
 }
-.descuento
+/* .descuento
 {
 
 }
 .descuentoInput
 {
 
-}
+} 
+????*/
 
 
 
@@ -589,6 +591,7 @@ button.enemy{
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+    padding: 1%;
     }
 
     .descripcionTotalProducto
@@ -610,14 +613,39 @@ button.enemy{
         font-weight: 800;
     }
 
-    .descripcion
-    {
 
+    /*Agrego para arreglar los botones*/
+    .detallesDeCompra {
+        padding: 2px 0px;
     }
 
-    .descuentoYPedido2 {
+    .cantidadYCarrito,.descuento2, .pedido2, .buttonComprarClass{
+        display: flex;
+        justify-content: space-between;
+        margin: 1% 20% 0% 0%;
+    }
+
+
+
+    .buttonComprarClass{
+
+        justify-content: flex-end;
+        
+    }
+    .buttonComprar{
+        padding: 12px;
+        border-radius: 12px;
+        background-color: #FF7070;
+        border: 0;
+        border-radius: 10px;
+        box-shadow: -4px 4px 2px #b0b8ff
+    }
+
+    /* .descuentoYPedido2 {
         display: flex;
         justify-content: space-between;
         margin-top: 14px;
-    }
+    } */
+
+
 }

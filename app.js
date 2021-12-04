@@ -12,7 +12,7 @@ app.set("views","views");
 
 app.use("/", main);
 app.use('/', users);
-app.use('/', products);
+app.use('/products', products);
 
 
 app.listen (3000, ()=>{
