@@ -192,16 +192,18 @@ main .formLogin div {
     color: #F3F0D7;
 }
 
+/* creo que esto no hace nada pero por las dudas
+no lo borro xd
 p h2{
     display: block;
 
-}
+}*/ 
 
 .saludo h2, div h3{
     color: #536FFF;
 }
 
-.button{
+.buttonLogin{
     width: 40% ;
     text-align: center;
     font-size: 15px;

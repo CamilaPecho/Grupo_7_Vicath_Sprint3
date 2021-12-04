@@ -184,7 +184,6 @@ main{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-left: 12px;
 }
 
 .productos h3{
@@ -208,10 +207,6 @@ main{
     transition: all 0.3s;
 }
 
-.destacados article:hover{
-    box-shadow: -4px 4px 2px #B0B8FF;
-    width:100%;
-}
 
 .destacados img{
     width: 100%;
@@ -271,10 +266,6 @@ main{
     transition: all 0.3s;
 }
 
-.ofertas article:hover{
-    box-shadow: -4px 4px 2px #B0B8FF;
-    width:100%;
-}
 
 /* -----------FOOTER ----------*/
 
@@ -438,16 +429,6 @@ button.enemy{
 
     .ofertas article{
         width: 45%;
-    }
-
-    .destacados article:hover{
-        box-shadow: -4px 4px 2px #B0B8FF;
-        width:47%;
-    }
-
-    .ofertas article:hover{
-        box-shadow: -4px 4px 2px #B0B8FF;
-        width:47%;
     }
 
     div.burger-menu{

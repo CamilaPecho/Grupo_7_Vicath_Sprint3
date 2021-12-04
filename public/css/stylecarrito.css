@@ -74,10 +74,6 @@ padding: 15px;
 }
 
 
-
-form{
- 
-}
 .form-container {
     display: flex;
     flex-wrap: wrap;
@@ -849,10 +845,7 @@ button.enemy{
         width: 100%;
     }
 
-    .buscador
-    {
 
-    }
 
     /*nuevo*----*/
 

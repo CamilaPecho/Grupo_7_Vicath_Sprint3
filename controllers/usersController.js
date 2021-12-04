@@ -6,7 +6,7 @@ const userController = {
         res.render('./users/register')
     },
     verPerfil:(req,res)=>{
-        
+        res.render('./users/perfil')
     },
 }
 
