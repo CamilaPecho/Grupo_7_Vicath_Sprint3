@@ -1,6 +1,6 @@
 const productController = {
     cart: (req,res) =>{
-        
+        res.render("cart");
     },
     detailProduct:(req,res)=>{
 
