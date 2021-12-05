@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Producto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('../partials/header') %> 
+    <main class="createProduct">
+        <div>
+        <form action="producto" method="get" class="crear">
+             <h3>Crear Producto</h3>
+            <div>
+                <input class="dato" type="text" name="titulo" id="titulo" placeholder="Titulo" required> 
+            </div>
+            <div >
+                <input class="dato" type="text" name="descripcion" id="descripcion"  placeholder="descripcion" required>  
+            </div>
+            <div>
+                <input class="dato" type="number" name="precio" id="precio" placeholder="precio" required> 
+            </div>
+            <div >
+                <select name="categoria">
+                    <option value="destacados">destacados</option> 
+                    <option value="novedades">novedades</option> 
+                    <option value="ofertas">ofertas</option>
+                </select>
+            </div>
+
+            <div class = "botones">
+                <button class= "botonCrear" type="submit"> crear </button>
+                <button class= "botonCancelar" type="reset"> cancelar </button>
+            </div>
+        </form>
+        </div>
+
+    </main>
+    <%- include('../partials/footer') %> 
+</body>
+</html>
