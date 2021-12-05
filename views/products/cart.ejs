@@ -10,9 +10,9 @@
     <link rel="icon" href="/images/logoIcon.ico">
     <title>Vicath - Libreria</title>
 </head>
-<body>
+<body class="bodyCarrito">
     <%- include("../partials/header") %>
-    <main>
+    <main class="mainCarrito">
         <section class="datosPago">
             <div class="contenedor-datosPago">
             <div class="formulario">
@@ -88,15 +88,15 @@
                     <label for="" class="descripcion-campo">Medio de pago:</label>
                     <div class="medPagoCont">
                     <div class="form-container">
-                    <button type="button" class="butonxd"><i class="fas fa-credit-card"></i> Tarjeta de crédito ó débito</button>
+                    <button type="button" class="butonMedioPago"><i class="fas fa-credit-card"></i> Tarjeta de crédito ó débito</button>
                     </div>
     
                     <div class="form-container">
-                    <button type="button" class="butonxd"><i class="fas fa-money-bill"></i> Rapipago ó Pagofacil</button>
+                    <button type="button" class="butonMedioPago"><i class="fas fa-money-bill"></i> Rapipago ó Pagofacil</button>
                     </div>
     
                     <div class="form-container">
-                        <button type="button" class="butonxd"><i class="fas fa-university"></i> Transferencia bancaria</button>
+                        <button type="button" class="butonMedioPago"><i class="fas fa-university"></i> Transferencia bancaria</button>
                     </div>
                     </div>
                     
@@ -114,7 +114,7 @@
             <div class="contenedor-resumen">
             <div class="section-top-resumen">
             <h3 class="tituloh3">Resumen del pedido</h3>
-        <article>
+        <article class="articleResumen">
             <img src="../images/hojas.jpg" alt="hoja" class="product_img">
             
             <div class="main-article">
@@ -133,7 +133,7 @@
             </div>
         </article>
         <hr>
-        <article>
+        <article class="articleResumen">
             <img src="../images/lapicera.jpg" alt="lapicera" class="product_img">
             
             <div class="main-article">
