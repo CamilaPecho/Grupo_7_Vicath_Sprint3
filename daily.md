@@ -13,6 +13,9 @@ Empezamos con eso,
 Repartimos tareas: Inu - Home, Login, Detalle
                   Cande - Carrito, Styles del detalle
                   Limberth - Registro, y corregir Styles del Carrito
+dayly - 6/12
+Terminamos de repartir tareas, organizamos archivos y cambiamos nombres, revision general
+de la pagina para empezar a fusionar estilos.
 
 
 
