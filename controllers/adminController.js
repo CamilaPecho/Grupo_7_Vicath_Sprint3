@@ -2,8 +2,8 @@ const adminController = {
     verProducts:(req,res) =>{
         res.render("./products/listProducts",{productos:productos})
     },
-    createProduct: (req,res) =>{
-        res.render("./products/createProduct")
+    productAdd: (req,res) =>{
+        res.render("./products/productAdd")
     }
 }
 
