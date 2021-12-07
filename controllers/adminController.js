@@ -38,6 +38,24 @@ const productos = [
         precio: 0,
         categoria: "categoria5"
     },
+    {
+        titulo : "titulo6",
+        descripcion : "descripcion6",
+        precio: 0,
+        categoria: "categoria6"
+    },
+    {
+        titulo : "titulo7",
+        descripcion : "descripcion7",
+        precio: 0,
+        categoria: "categoria7"
+    },
+    {
+        titulo : "titulo8",
+        descripcion : "descripcion8",
+        precio: 0,
+        categoria: "categoria8"
+    },
 ]
 
 module.exports = adminController;
