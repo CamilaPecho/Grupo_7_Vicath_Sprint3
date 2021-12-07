@@ -94,6 +94,7 @@ div.button-header nav ul
     justify-content: space-around;
     padding: 5px;
 }
+
 .button-header ul li{
     list-style-type: none;
 }
@@ -101,6 +102,11 @@ div.button-header nav ul
 .button-header ul li a{
     text-decoration: none;
     color: #FF7070;
+    transition: all 0.3s;
+}
+
+.button-header ul li a:hover{
+    color: #536FFF;
 }
 
 .iconosHeader {
@@ -112,7 +118,7 @@ div.button-header nav ul
 }
 
 .iconH i {
-    color: #000;
+    color: #FED2AA;
     font-size: 20px;
 }
 
@@ -129,7 +135,133 @@ div.burger-menu{
 
 /*------ FIN HEADER GENERAL ------*/
 
+/*------------------- HOME ------------------*/
 
+/*-------------------carrusel-------------*/
+/*.carrusel-caja{
+    display: none;
+}*/
+
+.slider{
+    display: none;
+}
+
+/*----------------------MAIN HOME----------------------*/
+main section article img{
+    width: 25%;
+}
+
+main{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*----------------------FILTRADO Home----------------------*/
+
+.filtrado-contenedor{
+    width: 25%;
+    padding: 10px;
+    display: none;
+}
+
+.filtrado{
+    padding: 20px;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+}
+
+.filtrado div {
+    padding-top: 10px;
+}
+
+.filtrado div label{
+    padding-bottom: 10px;
+}
+
+.filtrado div select{
+    margin: 5px;
+    width: 100%;
+    border:0;
+    background-color: white;
+    padding: 6px;
+    border-radius: 10px;
+    color:#536FFF;
+}
+
+.filtrado div select option{
+    border:0;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*----------------productos------------*/
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.productos h3{
+    padding: 10px;
+}
+
+/*----------------destacados------------*/
+
+.destacados, .ofertas{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.destacados article , .ofertas article{
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+
+.destacados img , .ofertas img{
+    width: 100%;
+}
+
+.main-article h4{
+    text-align: left;
+}
+
+.main-article p{
+    margin: 5px;
+    font-size: 15px;
+}
+
+.contenedor-precio p.precio{
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.contenedor-precio{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contenedor-precio button{
+    border: 0;
+    border-radius: 15px;
+    background-color: #FF7070;
+    color: #F3F0D7;
+    margin: 5px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*------------------ FIN HOME --------------*/
 
 /*------  MAIN LOGIN ------*/
 
@@ -227,7 +359,6 @@ main .formLogin div {
 }
 
 /*------ FIN MAIN LOGIN ------*/
-
 
 
 /* ------ MAIN REGISTER ------*/
@@ -354,13 +485,13 @@ button.facebook i{
 
 /*--- redes ---*/
 
-.seguinos {
+.seguinos, .mediospago {
     font-size: 22px;
     width: 100%;
     text-align: center;
 }
 
-.seguinos h4{
+.seguinos h4, .mediospago h4{
     padding: 10px;
     font-size: 20px;
 }
@@ -372,28 +503,12 @@ button.facebook i{
     width: 20%;
 }
 
-#face
-{
-color: #F3F0D7;
+#face, #twitter, #insta{
+    color: #F3F0D7;
 }
 
-#twitter
-{
-color:#F3F0D7;
-}
-
-#insta
-{
-color: #F3F0D7;
-} 
 
 /*--- medios de pago ---*/
-
-.mediospago {
-    width: 100%; 
-    font-size: 20px;
-    text-align: center;
-}
 
 .imagen-foot {
     width: 22%;
@@ -401,11 +516,6 @@ color: #F3F0D7;
 
 .imglogos {
     width: 50%;
-}
-
-.mediospago h4{
-    padding: 10px;
-    font-size: 20px;
 }
 
 .mediospago i{
@@ -429,6 +539,7 @@ color: #F3F0D7;
 .enemy{
     padding: 6px;
 }
+
 input.enemy{
     width: 90%;
     padding: 6px;
@@ -457,8 +568,6 @@ button.enemy{
 
 /*------ FIN FOOTER GENERAL ------*/
 
-
-
 /*------ MEDIA QUERIES TABLET ------*/
 
 @media (min-width: 361px){
@@ -479,7 +588,72 @@ button.enemy{
     .form-busqueda button{
         width: 8%;
     }
+    
+    #iconCuenta{
+        position: static;
+        cursor: pointer;
+    }
+    
+    .login_desplegable_header{
+        display: block;
+        text-align: center;
+        margin-bottom: 14px;
+    }
+    
+    .login_desplegable {
+        position: absolute;
+        right: 2px;
+        box-sizing: border-box;
+        opacity: 0;
+        width: 106px;
+        background-color: white;
+        padding: 5px;
+        z-index: -2;
+        box-shadow: 0 3px 6px #B0B8FF;
+        transition: all 1s;
+    }
+    
+    .login_desplegable_login{
+        display:block;
+        text-align: center;
+    }
+    
+    .login_desplegable_signup{
+        display:block;
+        text-align: center;  
+    }
 
+    /*------------HOME---------*/
+
+    .productos{
+        margin: 3px auto;
+        flex-wrap: wrap;
+    }
+
+    .destacados, .ofertas{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+
+    .destacados article, .ofertas article{
+        width: 45%;
+    }
+
+    .inputCheck /*pa borrar ese feo checkbox*/{
+        position: absolute;
+        display: none;
+    }
+    
+    .inputCheck:checked + .login_desplegable{
+    
+        opacity: 1;
+        z-index: 10;
+    }
+
+    #carritoS{
+        margin-right: 12px;
+    }
 
 /*--- LOGIN ---*/
     
@@ -522,7 +696,7 @@ button.enemy{
 
 
 /*------ MEDIA QUERIES DESKTOP ------*/
-@media (min-width: 679px){
+@media (min-width: 769px){
 
 /*--- HEADER ---*/
     .form-busqueda button{
@@ -533,6 +707,79 @@ button.enemy{
         font-size: 24px;
     }
 
+/* ------------HOME------------*/
+    .filtrado-contenedor{
+        width: 25%;
+        padding: 10px;
+        display: block;
+        margin: 5px;
+    }
+
+    .productos{
+        width: 70%;
+    }
+
+    .destacados article, .ofertas article{
+        margin: 5px;
+        width: 22%;
+    }
+
+    .destacados article:hover, .ofertas article:hover {
+        box-shadow: -4px 4px 2px #B0B8FF;
+        width:25%;
+    }
+
+    .slider{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    
+    }
+    
+    .slider ul{
+        padding: 0;
+        display: flex;
+        width: 400%;
+        animation: cambiox 13s infinite alternate;
+    
+    }
+    
+    .slider li{
+        width: 100%;
+        list-style: none;
+    }
+    
+    .slider img{
+        width: 100%;
+    }
+    
+    @keyframes cambiox{
+        0% {margin-left:0;}
+        20% {margin-left:0;}
+        /*se tarda 1 seg en una imagen a otra 20x0.05*/
+        25% {margin-left:-100%;}
+        45% {margin-left:-100%;}
+    
+        50% {margin-left:-200%;}
+        70% {margin-left:-200%;}
+    
+        75% {margin-left:-300%;}
+        100% {margin-left:-300%;}
+    }
+
+    .login_desplegable {
+        right: -35px;
+    }
+
+    .iconosHeader
+    {
+        position: static;
+    }
+
+    #iconCuenta
+    {
+        position: relative;
+    }
 
 /*--- LOGIN ---*/
     main .formLogin{
