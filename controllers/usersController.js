@@ -8,6 +8,10 @@ const userController = {
     verPerfil:(req,res)=>{
         res.render('./users/perfil')
     },
+    homeAdmin: (req, res) => 
+    {
+        res.render('./users/homeAdmin')
+    }
 }
 
 module.exports = userController;
