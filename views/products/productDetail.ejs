@@ -14,7 +14,7 @@
         <header>
             <div class="top-header">
                 <div class= "logo">
-                    <a href="/"><img class="imagen-logo" src="./images/logo.png" alt="Logo de pagina"></a>
+                    <a href="/"><img class="imagen-logo" src="../images/logo.png" alt="Logo de pagina"></a>
                 </div>
                 <div class="form-busqueda">
                     <form action="#" method="get">
@@ -71,42 +71,46 @@
                 <div class="imagenesProdContenedor">
                 
                 <div class="imagen-producto">
-                    <img src="./images/calculadora1.png" class="cartuchera">
+                    <img src="../images/calculadora1.png" class="cartuchera">
                 </div>
                 
                 <div class="imagen-producto-hijas">
-                    <div class="prodHija"><img src="./images/calculadora2.png" alt=""></div>
-                    <div class="prodHija"><img src="./images/calculadora3.png" alt=""></div>
-                    <div class="prodHija"><img src="./images/calculadora4.png" alt=""></div>
+                    <div class="prodHija"><img src="../images/calculadora2.png" alt=""></div>
+                    <div class="prodHija"><img src="../images/calculadora3.png" alt=""></div>
+                    <div class="prodHija"><img src="../images/calculadora4.png" alt=""></div>
                 </div>
                 
-
-                <div class="cantidadYCarrito">
+                <div class="detallesDelProducto">
+                <div class="cantidadYPromocion">
                     <div class="cantidad">
                     <label for="">Cantidad: 
                     <input type="number" class="cantidadInput" minlength="0" maxlength="15">
                     </label>
                     </div>
 
-                    <div class="carrito">
-                        <button type="button" class="botonDetalle"><i class="fas fa-cart-plus"></i> Agregar a carrito</button>
-                        
+                    <div class="descuento">
+                        <label for="">¿Tenés un código de descuento? <i class="fas fa-piggy-bank"></i></label>
+                        <input type="text" class="descuentoInput" placeholder="">
                     </div>
+
+                    
                 </div>
 
                 <div class="compartir">
                     <i class="fas fa-share-alt"></i> Compartir
                 </div>
 
-                <div class="descuentoYPedido">
-                    <div class="descuento">
-                        <input type="text" class="descuentoInput" placeholder="Código de descuento">
-                    </div>
+                <!--<div class="descuentoYPedido">
+                    
                     <div class="Pedido">
                         <button type="button" class="botonDetalle"><i class="fas fa-truck"></i> Calcular envio</button>
                     </div>
+                </div>-->
+                <div class="carrito">
+                    <button type="button" class="botonDetalle"><i class="fas fa-cart-plus"></i> Agregar a carrito</button>  
                 </div>
-                
+
+                </div>
             </div>
                 <div class="descripcionTotalProducto">
                     <h4 class="titulo">Calculadora CASIO FX-666</h4> 
@@ -116,19 +120,29 @@
                     Ab velit excepturi pariatur quas sed totam earum facilis magnam 
                     id optio sint qui harum voluptatum neque provident ea reiciendis 
                     </p>
-                    <div class="descuentoPC">
-                        <div class="descuento2">
-                            <label for="" class="textoDescuento">¿Tenés algún código de descuento?
-                            <input type="text" class="descuentoInput" placeholder="Código de descuento"></label>
+                    <div class="cantidadYPromocionPC">
+                        <div class="cantidad">
+                        <label for="">Cantidad: 
+                        <input type="number" class="cantidadInput" minlength="0" maxlength="15">
+                        </label>
                         </div>
-
+    
+                        <div class="descuento">
+                            <label for="">¿Tenés código de descuento? <i class="fas fa-piggy-bank"></i></label>
+                            <input type="text" class="descuentoInput" placeholder="">
+                        </div>
+    
+                        
                     </div>
-
+                    <div class="imagenMediosPagoCont">
+                        <img src="/images/mediospago.jpg" alt="" class="imagenMP">
+                    </div>
                     <div class="pedidoPC">
                         <div class="Pedido2">
                             <button type="button" class="bttonEnvio"><i class="fas fa-truck"></i> Calcular envio</button>
                         </div>
                     </div>
+                    <p id="disclaimer" style="color:#666; font-size: 11px;"><span style="color: #39b54a"><i class="fas fa-clipboard-check"></i> Compra protegida</span>, recibí el producto o te <a href="terminos">devolvemos tu dinero</a>.</p>
                 
             </div>
             </section>
@@ -139,7 +153,7 @@
                 <div class="articulos">
                 <article class="prod-relacionado">
                     <div >
-                        <img src="./images/cartuchera.jpg" class="cartuchera">
+                        <img src="../images/cartuchera.jpg" class="cartuchera">
                     </div>
                     <div class="tituloProd">
                        <h3>Titulo producto</h3> 
@@ -147,7 +161,7 @@
                 </article>
                 <article class="prod-relacionado">
                     <div >
-                        <img src="./images/marcadores.jpg" class="marcadores">
+                        <img src="../images/marcadores.jpg" class="marcadores">
                     </div>
                     <div class="tituloProd">
                        <h3>Titulo producto</h3> 
@@ -155,7 +169,7 @@
                 </article>
                 <article class="prod-relacionado">
                     <div >
-                        <img src="./images/marcadoresPastel.jpg" class="pasteles">
+                        <img src="../images/marcadoresPastel.jpg" class="pasteles">
                     </div>
                     <div class="tituloProd">
                        <h3>Titulo producto</h3> 
@@ -163,7 +177,7 @@
                 </article>
                 <article class="prod-relacionado">
                     <div >
-                        <img src="./images/tijeras.jpg" class="tijeras">
+                        <img src="../images/tijeras.jpg" class="tijeras">
                     </div>
                     <div class="tituloProd">
                        <h3>Titulo producto</h3> 
@@ -179,7 +193,7 @@
                 <div class="articulos">
                 <article class="prod-similar">
                     <div >
-                        <img src="./images/cartuchera.jpg" class="cartuchera">
+                        <img src="../images/cartuchera.jpg" class="cartuchera">
                     </div>
                     <div class="tituloProd">
                        <h3>Titulo producto</h3> 
@@ -187,7 +201,7 @@
                 </article>
                 <article class="prod-similar">
                     <div >
-                        <img src="./images/marcadores.jpg" class="marcadores">
+                        <img src="../images/marcadores.jpg" class="marcadores">
                     </div>
                     <div class="tituloProd">
                        <h3>Titulo producto</h3> 
@@ -195,7 +209,7 @@
                 </article>
                 <article class="prod-similar">
                     <div >
-                        <img src="./images/marcadoresPastel.jpg" class="pasteles">
+                        <img src="../images/marcadoresPastel.jpg" class="pasteles">
                     </div>
                     <div class="tituloProd">
                        <h3>Titulo producto</h3> 
@@ -203,7 +217,7 @@
                 </article>
                 <article class="prod-similar">
                     <div >
-                        <img src="./images/tijeras.jpg" class="tijeras">
+                        <img src="../images/tijeras.jpg" class="tijeras">
                     </div>
                     <div class="tituloProd">
                        <h3>Titulo producto</h3> 

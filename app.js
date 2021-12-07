@@ -15,7 +15,10 @@ app.use("/", main);
 app.use('/', users);
 app.use('/products', products);
 app.use('/admin', admins);
-
+app.use((req, res, next) => 
+{
+    res.status(404).render('paginaNoEncontrada');
+})
 
 app.listen (3000, ()=>{
     console.log('Servidor funcionando');

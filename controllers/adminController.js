@@ -4,6 +4,10 @@ const adminController = {
     },
     productAdd: (req,res) =>{
         res.render("./products/productAdd")
+    },
+    verHome: (req, res) => 
+    {
+        res.render('homeAdmin')
     }
 }
 
