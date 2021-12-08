@@ -72,103 +72,46 @@
         <section class="productos">
             <h3>Productos destacados</h3>
             <div class="destacados">
-            <article>
-                <img src="./images/cartuchera.jpg" class="cartuchera" >
-                <div class="main-article">
-                    <h4>Titulo producto</h4>
-                    <p>Descripcion producto</p>
-                    <div class="contenedor-precio">
-                        <p class="precio">$$$ </p>
-                        <button><i class="fas fa-cart-plus"></i></button>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <a href="/products/productDetail">
-                    <img src="./images/calculadora1.png" class="calculadora1">  
-                </a>
-                <div class="main-article">
-                    <h4>Titulo producto</h4>
-                    <p>Descripcion producto</p>
-                    <div class="contenedor-precio">
-                        <p class="precio">$$$ </p>
-                        <button><i class="fas fa-cart-plus"></i></button>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <img src="./images/hojas.jpg" class="hojas">
-                <div class="main-article">
-                    <h4>Titulo producto</h4>
-                    <p>Descripcion producto</p>
-                    <div class="contenedor-precio">
-                        <p class="precio">$$$ </p>
-                        <button><i class="fas fa-cart-plus"></i></button>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <img src="./images/lapicera.jpg" class="lapicera">
-                <div class="main-article">
-                    <h4>Titulo producto</h4>
-                    <p>Descripcion producto</p>
-                    <div class="contenedor-precio">
-                        <p class="precio">$$$ </p>
-                        <button><i class="fas fa-cart-plus"></i></button>
-                    </div>
-                </div>
-            </article>
-        </div>
+                <% for(producto of productos){ %>
+                    <% if(producto.categoria == "destacados") {%>  
+                    <article>
+                        <a href="/products/productDetail">
+                            <img src= <%= producto.imagen %>  class="imagenProducto" >
+                        </a>
+                        <div class="main-article">
+                            <h4><%= producto.titulo %> </h4>
+                            <p><%= producto.descripcion %></p>
+                            <div class="contenedor-precio">
+                                <p class="precio">$<%= producto.precio %> </p>
+                                <button><i class="fas fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                    <% } %> 
+                <% } %> 
+            </div>
 
-        <h3>Productos en oferta</h3>
-        <div class="ofertas">
-            
-            <article>
-                <img src="./images/marcadores.jpg" class="cuaderno" >
-                <div class="main-article">
-                    <h4>Titulo producto</h4>
-                    <p>Descripcion producto</p>
-                    <div class="contenedor-precio">
-                        <p class="precio">$$$ </p>
-                        <button><i class="fas fa-cart-plus"></i></button>
-                    </div>   
-                </div>
-            </article>
-            <article>
-                <img src="./images/marcadoresPastel.jpg" class="marcadores-gel">
-                <div class="main-article">
-                    <h4>Titulo producto</h4>
-                    <p>Descripcion producto</p>
-                    <div class="contenedor-precio">
-                        <p class="precio">$$$ </p>
-                        <button><i class="fas fa-cart-plus"></i></button>
-                    </div> 
-                </div>
-            </article>
-            <article>
-                <img src="./images/tijeras.jpg" class="marcadores-pastel">
-                <div class="main-article">
-                    <h4>Titulo producto</h4>
-                    <p>Descripcion producto</p>
-                    <div class="contenedor-precio">
-                        <p class="precio">$$$ </p>
-                        <button><i class="fas fa-cart-plus"></i></button>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <img src="./images/lapicera.jpg" class="cuadernos">
-                <div class="main-article">
-                    <h4>Titulo producto</h4>
-                    <p>Descripcion producto</p>
-                    <div class="contenedor-precio">
-                        <p class="precio">$$$ </p>
-                        <button><i class="fas fa-cart-plus"></i></button>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
+            <h3>Productos en oferta</h3>
+            <div class="ofertas">
+                <% for(producto of productos) {%>
+                        <% if(producto.categoria == "ofertas") {%>  
+                        <article>
+                            <a href="/products/productDetail">
+                                <img src= <%= producto.imagen %>  class="imagenProducto" >
+                            </a>
+                            <div class="main-article">
+                                <h4><%= producto.titulo %> </h4>
+                                <p><%= producto.descripcion %></p>
+                                <div class="contenedor-precio">
+                                    <p class="precio">$<%= producto.precio %> </p>
+                                    <button><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </article>
+                        <% } %> 
+                <% } %> 
+            </div>
+        </section>
     </main>
     <%- include("./partials/footer") %> 
 </body>
