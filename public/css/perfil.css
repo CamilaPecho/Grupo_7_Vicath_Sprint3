@@ -15,6 +15,8 @@ body
 .contenedorFormularioPerfil
 {
     padding: 6px;
+    justify-content: left;
+    
 }
 
 .parrafoPerfilInicio
@@ -101,9 +103,32 @@ tbody tr:nth-child(odd) {
     background-color: #ffffff;
   }
 
-  .historiaIndividial {
-    height: 162px;
+  
+
+  .historialComprasOAFines {
+    width: 100%;
+    background-color: #FF7070;
+    padding: 8px;
+    border-radius: 23px;
+    font-size: 17px;
 }
+
+.fondoVista
+{
+    background-color: #F3F0D7;
+}
+
+.formularioVista {
+    width: 100%;
+    padding: 22px;
+    background-color: beige;
+    height: 9%;
+    border-radius: 23px;
+    margin-bottom: 18px;
+}
+
+
+
 
   @media (min-width: 720px)
   {
@@ -112,22 +137,30 @@ tbody tr:nth-child(odd) {
     {
         display: flex;
         padding: 22px;
+        justify-content: space-between;
     }
 
     .formularioVista {
         width: 50%;
         padding: 22px;
+        margin-right: 11px;
     }
 
-    .historialComprasOAFines {
-        width: 50%;
-        background-color: antiquewhite;
-        padding: 30px;
-        border-radius: 23px;
+    .historiaIndividial {
+        height: 100px;
     }
 
     .textoHistorial
     {
         margin-top: 0;
+    }
+
+    .historialComprasOAFines {
+        width: 50%;
+        background-color: #FF7070;
+        padding: 30px;
+        border-radius: 23px;
+        height: 240px;
+        font-size: 15px;
     }
   }
