@@ -1,10 +1,10 @@
 {
-  "name": "Grupo_7_Sprint_3",
+  "name": "grupo_7_sprint_3",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",

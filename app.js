@@ -18,6 +18,7 @@ app.use((req, res, next) =>
     res.status(404).render('paginaNoEncontrada');
 })
 
-app.listen (3000, ()=>{
-    console.log('Servidor funcionando 😀😂');
+app.listen (process.env.PORT || 3001, ()=>{
+    console.log('Servidor funcionando');
 });
+
