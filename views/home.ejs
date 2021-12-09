@@ -75,7 +75,7 @@
                 <% for(producto of productos){ %>
                     <% if(producto.categoria == "destacados") {%>  
                     <article>
-                        <a href="/products/productDetail">
+                        <a href="/products/productDetail/<%= producto.id %>">
                             <img src= <%= producto.imagen %>  class="imagenProducto" >
                         </a>
                         <div class="main-article">
@@ -96,7 +96,7 @@
                 <% for(producto of productos) {%>
                         <% if(producto.categoria == "ofertas") {%>  
                         <article>
-                            <a href="/products/productDetail">
+                            <a href="/products/productDetail/<%= producto.id %>">
                                 <img src= <%= producto.imagen %>  class="imagenProducto" >
                             </a>
                             <div class="main-article">
